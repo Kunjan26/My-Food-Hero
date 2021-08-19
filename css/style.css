@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+ /*  website(github):--     https://kunjan26.github.io/My-Food-Hero/      */
+ /*  website(netlify):--    https://myfood-hero.netlify.app     */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}   
+
+
+/* -------------------------------------------------------------------------- Header & navbar  ------------------------------------------------------------------- */
+nav{    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,0.4);
+    color: white;
+    width: 100%;
+    font-family:'Tenor Sans', sans-serif;
+    height: 8vh;
+}
+
+nav .logo{
+    width: 25%;
+    text-align: center;
+    color: #f5bb00;
+    font-size:25px;
+}
+
+.myelement{
+	animation: animate__pulse;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 0 23px;
+    margin: 6px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 3px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+}
+
+nav ul li a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 6px;
+}
+
+
+/* ------------------------------------------------------------------------ main(home) section ------------------------------------------------------------------------- */
+body{
+	min-height: calc(100vh - 8vh);
+	background:url(../img/background1.jpeg) no-repeat center center/cover;
+}
+
+#home{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 200px;
+    margin: 15px 0;
+}
+#home .sfh{
+	 color: #f5bb00;
+}
+#home h1{
+    color: white;
+    font-size: 2.8rem;
+    padding: 17px;
+    font-family:'Tenor Sans', sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    text-shadow: 3px 1px 2px black;
+    text-align: center;
+}
+
+.change-content::after{
+    content: " ";
+    animation: changetxt 10s linear 0.1s infinite;
+    color: rgb(55, 187, 112);
+}
+@keyframes changetxt {
+    0%{
+        content:"Visit The Restaurant";
+    }
+    25%{
+        content:"Taste The Food";
+    }
+    50%{
+        content:"Give Your Response";
+    }
+    75%{
+        content:"Feel The Nature";
+    }
+    100%{
+        content:"Enjoy Here!";
+    }
+}
+
+#home h2{
+    color: white;
+    font-size: 1.8rem;
+    font-family:'Tenor Sans', sans-serif;
+    padding:0 0 12px 0;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 2px 1px 2px black;
+}
+
+#home p{
+    color: white;
+    text-align:justify; 
+    font-weight: 500;
+    font-family:'Tenor Sans', sans-serif;
+    padding:12px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    text-shadow: 2px 1px 2px black;
+}
+
+#home .p1 {
+    color: rgba(55, 187, 112, 0.945);
+    text-align:justify; 
+    font-size: 2.8rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    text-shadow: 2px 1px 2px black;
+}
+
+.btn{
+    padding: 6px 20px;
+    background-color: rgb(9, 132, 33);
+    color: white;
+    border: 2px solid white; 
+    border-radius: 10px;
+    margin: 12px;
+    font-family:'Tenor Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.6),2px 6px 20px 0 rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(42, 133, 60);
+    color: white;
+    box-shadow: 2px 4px 8px 0 rgba(0,0,0,1),2px 6px 20px 0 rgba(0,0,0,1);
+}
+
+
+/* -------------------------------------------------- Responsive web-design section --------------------------------------------------------*/
+@media screen and (max-width:1170px){
+	nav{
+		flex-direction:column;
+		height: 21vh;
+	}
+	nav ul li a{
+		font-size:18px;
+	}
+	nav .logo{
+		    margin: 8px 0px 17px 0px;
+	}
+	#home h1{
+		font-size:2.3rem;
+	}
+}
+
+@media screen and (max-width:1024px){
+	nav{
+		flex-direction:column;
+		height: 7vh;
+	}
+	nav ul li {
+		padding: 0 60px;
+	}
+	nav .logo{
+		width:30%;
+		font-size:18px;
+	}
+	#home{
+		padding:8px 125px;
+	}
+	#home h1{
+		font-size:2.3rem;
+	}
+}
+
+@media screen and (max-width:770px) {
+	nav{
+		flex-direction:column;
+		height: 9vh;
+	}
+	nav ul li {
+		padding: 0 35px;
+	}
+	#home{
+		padding:8px 50px;
+	}
+	#home h1{
+		font-size:2rem;
+	}
+}
+
+@media screen and (max-width:550px) {
+	nav{
+		flex-direction:column;
+		height: 11vh;
+	}
+	nav .logo{
+		width:35%;
+		font-size:13px;
+	}
+	nav ul li {
+		padding: 0 14px;
+	}
+	nav ul li a {
+		font-size: 15px;
+	}
+	#home{
+		padding:8px 18px;
+	}
+	#home .p1 {
+		font-size: 2.6rem;
+	}
+	#home h1 {
+		font-size: 1.64rem;
+	}
+	#home h2{
+		font-size:1.4rem;
+	}
+}
+
+@media screen and (max-width:400px){
+	nav{
+		flex-direction:column;
+		height: 12vh;
+	}
+	nav .logo{
+		width:40%;
+		font-size:13px;
+	}
+	nav ul li {
+		padding: 0 7px;
+	}
+	nav ul li a {
+		font-size: 15px;
+	}
+	#home{
+		padding:8px 18px;
+	}
+	#home .p1 {
+		font-size: 1.7rem;
+	}
+}
+
+@media screen and (max-width:350px){
+	nav ul li {
+		padding: 0 10px;
+	}
+	nav ul li a {
+		font-size: 12px;
+		letter-spacing:0.3px;
+		word-spacing:0px;
+	}
+	nav .logo{
+		width:50%;
+		font-size:13px;
+	}
+	#home{
+		padding:8px 8px;
+	}
+	#home .p1 {
+		font-size: 1.65rem;
+	}
+}
+
+
+/* ------------------------------------------------------------------- The end  ----------------------------------------------------------*/

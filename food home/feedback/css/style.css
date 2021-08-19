@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* --------------------------------------------------- From design ---------------------------------------------------------*/
+form{
+    background-color: rgba(233, 227, 227, 0.89);
+    border: 2px solid rgba(201, 200, 200, 0.89);
+    border-radius: 3px;
+    margin: 42px auto;
+    width:90%;
+    padding: 0 5px 25px;
+    box-shadow: 3px 5px 8px 1px rgba(0,0,0,0.58),2px 6px 20px 0 rgba(0,0,0,0.48);
+}
+
+.form-register{
+    margin: 12px;
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
+    word-spacing: 15px;
+    color:crimson;
+}
+
+.gender,label{ 
+    padding: 3px 5px;
+    margin: 8px 7px;
+    font-weight:bold;
+    font-size: 18px;
+} 
+
+input[type=text],textarea,input[type=email]{
+    overflow: hidden;
+    width: 98%;
+    padding: 12px;
+    margin: 8px 10px;
+    border: 2px solid rgb(107, 107, 107);
+    border-radius: 3px;
+    background-color: white;
+    box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.4);
+}
+
+input[type=radio]{
+    padding: 5px;
+    margin: 8px 0 8px 13px;
+}
+
+.gm,.gfe{
+    font-weight: 200;
+}
+
+input[type=tel],select{
+    padding: 8px;
+    margin: 8px 0 8px 11px;
+    border: 2px solid rgb(107, 107, 107);
+    border-radius: 3px;
+    background-color: white;
+    box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.4);
+}
+input[type=tel]{
+	width:40%;
+}
+input[type=submit]{
+    width: 98%;
+    color: white;
+    background-color: #049942;
+    border: none;
+    border-radius: 2px;
+    padding: 10px;
+    margin: 5px 12px;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.4),2px 6px 20px 0 rgba(0,0,0,0.3);
+}
+
+input[type=submit]:hover{
+    background-color: #20a75c;
+}
+
+
+/* -------------------------------------------------- Responsive design section --------------------------------------------------------*/
+@media screen and (max-width: 1024px){
+    input[type=submit] {
+		width: 88%;
+        color: white;
+        background-color: #049942;
+        border: none;
+        border-radius: 2px;
+        padding: 10px;
+        margin: auto;
+        display: block;
+        font-size: 15px;
+        cursor: pointer;
+        box-shadow: 2px 4px 8px 0 rgb(0 0 0 / 40%), 2px 6px 20px 0 rgb(0 0 0 / 30%);
+	}
+}
+
+@media screen and (max-width:770px) {
+	input[type=submit] {
+		width: 85%;
+		color: white;
+		background-color: #049942;
+		border: none;
+		border-radius: 2px;
+		padding: 10px;
+		margin: auto;
+        display: block;
+        font-size: 15px;
+        cursor: pointer;
+        box-shadow: 2px 4px 8px 0 rgb(0 0 0 / 40%), 2px 6px 20px 0 rgb(0 0 0 / 30%);
+	}
+}
+
+@media screen and (max-width:550px) {
+	input[type=text], textarea, input[type=email] {
+        overflow: hidden;
+        width: 94%;
+        padding: 12px;
+        margin: auto;
+        display: block;
+        border: 2px solid rgb(107, 107, 107);
+        border-radius: 3px;
+        background-color: white;
+        box-shadow: 2px 4px 8px 0 rgb(0 0 0 / 40%);
+    }
+	
+    input[type=submit] {
+        width: 77%;
+        color: white;
+        background-color: #049942;
+        border: none;
+        border-radius: 2px;
+        padding: 10px;
+        margin: auto;
+        display: block;
+        font-size: 15px;
+        cursor: pointer;
+        box-shadow: 2px 4px 8px 0 rgb(0 0 0 / 40%), 2px 6px 20px 0 rgb(0 0 0 / 30%);
+	}
+}
+
+@media screen and (max-width:400px) {
+    input[type=text], textarea, input[type=email] {
+        overflow: hidden;
+        width: 96%;
+        padding: 12px;
+        margin: auto;
+        display: block;
+        border: 2px solid rgb(107, 107, 107);
+        border-radius: 3px;
+        background-color: white;
+        box-shadow: 2px 4px 8px 0 rgb(0 0 0 / 40%);
+    }
+}
+
+
+/* ------------------------------------------------------------------- The end  ----------------------------------------------------------*/
